@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<head>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/modal.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="sendFun,sendfun,晨暉悠翔,しんきゆうと,ポートフォリオ,小説,自作小説サイト,オリジナル小説,小説サイト">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134631891-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134631891-1');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="nav-top green darken-3"></div>
+    <nav class="nav-extended">
+      <div class="nav-wrapper green lighten-1">
+        <a href="#" class="brand-logo pl-5"><img src="img/logo.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#piece">Piece</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#twitter">Twitter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#piece">Piece</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#twitter">Twitter</a></li>
+    </ul>
+  </header>
+
+  <div class="parallax-container">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card medium modal-original mt-5 hoverable">
+            <div class="card-content">
+              <div class="inner"><span class="honbun"></span><br><br>
+                <span class="low_position sakuhin_name"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="img/haikei-monokuro.jpg" alt="MyComponent">
+    </div>
+  </div>
+  <div class="blue-grey darken-3">
+    <div class="section">
+      <div class="container">
+        <h4 class="white-text center-align"><span class="inline-block">モノ書くエンジニア</span><small class="white-text inline-block">~何かを届けていきたい~</small></h4>
+      </div>
+    </div>
+  </div>
+  <!-- profile -->
+  <div id="profile">
+    <div class="section">
+      <div class="container">
+        <div class="center-align">
+          <i class="medium material-icons">account_circle</i>
+          <h4 class="mt-0">Profile</h4>
+          <h6 class="text-muted">EnginnerでありCreator（修行中）</h6>
+        </div>
+        <div class="row mt-4">
+          <div class="col m8 s12 offset-m2">
+            <div class="card blue lighten-1 hoverable">
+              <img class="circle m-auto pt-2 block w-card-image" src="img/sinkiyuuto.jpeg" alt="shinkiyuuto">
+              <div class="card-content">
+                <h4 class="center-align white-text my-0">Introduction & Career</h4>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a class="active" href="#basic">BASIC</a></li>
+                  <li class="tab"><a href="#engineer">Engineer</a></li>
+                  <li class="tab"><a href="#creator">Creator</a></li>
+                </ul>
+                <div class="card-content white">
+                  <div id="basic" class="active">
+                    年齢 : 20と30の間<br>
+                    生息地 : 西日本<br>
+                    学歴 : 電気系の大学院修了（情報系ではない）<br>
+                    座右の銘 : 即今・当処・自己<br>
+                    学生時代は陸上やったり、ピアノやったり。<br>
+                    あらゆるゲームを積みまくっている（特にswitch）<br>
+                    <br>
+                    好きなこと<br>
+                    小説。ジャンルならミステリ<br>
+                    作家なら、米澤穂信、伊坂幸太郎<br>
+                    アガサクリスティーetc<br>
+                    雑多にかくと漫画、星野源、Scrapbox<br>
+                  </div>
+                  <div id="engineer">
+                    二年目のITエンジニア（Web系）<br>
+                    ブログでは「逆さのくま」名義で細々活動中<br>
+                    仕事で主に使っている言語はJava<br>
+                    仕事帰りはカフェにいる。<br>
+                    使ってきた言語・フレームワークについては<br>
+                    使用言語/フレームワークに記載<br>
+
+                    <br>
+                    保有資格<br>
+                    基本情報技術者<br>
+                    HTMLプロフェッショナル認定資格レベル1<br>
+                    Java SE8 Silver<br>
+                    Java SE8 Gold<br>
+                    G検定（ジェネラリスト検定）<br>
+                    AWS 認定ソリューションアーキテクト–アソシエイト<br>
+                  </div>
+                  <div id="creator">
+                    PN : 晨暉悠翔（shinkiyuto）として活動<br>
+                    本格的に活動し始めたのは、大学一年（18歳）くらい<br>
+                    物語を届ける、という夢は一生涯諦めたくない<br>
+                    今は一週間に2000字書くことを習慣にしようとしている<br>
+                    <br>
+                    投稿歴<br>
+                    （賞取ってないのになんだって話だが）<br>
+                    星新一賞第3回学生部門「ニアリーゼロ」<br>
+                    同賞第4回学生部門「涙を流さないでください」<br>
+                    上記で3次選考までいくも落選<br>
+                    ジャンプ小説新人賞短編「未来予知」<br>
+                    一次選考までで落選<br>
+                    あとはメフィスト出してみたり<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col m10 s12 offset-m1">
+            <ul class="collapsible hoverable">
+              <li>
+                <div class="collapsible-header blue lighten-1 block">
+                  <h5 class="center-align white-text my-1">使用している言語/フレームワーク</h5>
+                </div>
+                <div class="collapsible-body py-1">
+                  <h6 class="text-muted">フロント：HTML,CSS,Bootstrap,jQuery</h6>
+                  <h6 class="text-muted">バックエンド：Java,Spring,Python,MySQL</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="carousel carousel-height">
+            <a class="carousel-item" href="#one!"><img src="img/programminglogo/java.png" alt="java"></a>
+            <a class="carousel-item" href="#two!"><img src="img/programminglogo/spring.png" alt="spring"></a>
+            <a class="carousel-item" href="#three!"><img src="img/programminglogo/html-5.png" alt="html"></a>
+            <a class="carousel-item" href="#four!"><img src="img/programminglogo/css-3.png" alt="css"></a>
+            <a class="carousel-item" href="#five!"><img src="img/programminglogo/bootstrap.png" alt="bootstrap"></a>
+            <a class="carousel-item" href="#six!"><img src="img/programminglogo/jquery.png" alt="jquery"></a>
+            <a class="carousel-item" href="#seven!"><img src="img/programminglogo/python.png" alt="python"></a>
+            <a class="carousel-item" href="#eight!"><img src="img/programminglogo/mysql.png" alt="mysql"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- story -->
+  <div id="story">
+    <div class="section light-green lighten-1">
+      <div class="container">
+        <div class="center-align">
+          <i class="medium material-icons">create</i>
+          <h4 class="mt-0">Story</h4>
+          <h6 class="text-muted">執筆作品</h6>
+        </div>
+        <div class="row mt-4">
+          <div class="col m6 s12">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="img/scrapbox_image.png" alt="scrapbox-image">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Scrapboxへのリンク</span>
+                少しまどろっこしいかもしれませんが、<br>
+                現在公開中の小説についてScrapboxというサイトにまとめており、<br>
+                そちらのリンクになります。<br>
+                Scrapboxは”リンク”のさせ方が秀逸なので、そちらも体感して頂けたら<br>
+              </div>
+              <div class="card-action">
+                <a href="https://scrapbox.io/sinkiyuto-world/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B" class="none-text-transform" target="_blank">Scrapbox作品紹介のページ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card hoverable">
+              <div class="card-content">
+                <span class="card-title">小説サイト</span>
+                現在利用させてもらっている小説投稿サイトへの直リンクになります。<br>
+                Scrapboxにあらすじ等まとめてあるので、Scrapbox経由を推奨中です。<br>
+                <br>
+                小説家になろう掲載作品<br>
+                ユウ<br>
+                黒い鳥<br>
+                白い部屋<br>
+                誕生日は一ヶ月後<br>
+                リハーサルは存在しない<br>
+                月曜日の同居<br>
+                <br>
+                monogatary掲載作品<br>
+                人語翻訳機<br>
+              </div>
+              <div class="card-action">
+                <a href="https://mypage.syosetu.com/377342/" target="_blank">小説家になろう</a>
+                <a href="https://monogatary.com/user_page/story/5e2d9ea0-ee1a-11e8-8041-0242ac120002" target="_blank">monogatary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- piece -->
+  <div id="piece">
+    <div class="section">
+      <div class="container">
+        <div class="center-align">
+          <i class="medium material-icons">extension</i>
+          <h4 class="mt-0">Piece</h4>
+          <h6 class="text-muted">私を作る構成要素の断片</h6>
+        </div>
+        <div class="row mt-4">
+          <div class="col s12 m8 offset-m2">
+            <ul class="collapsible hoverable">
+              <li>
+                <div class="collapsible-header">まだ完成形まで至っていない創作物や趣味のまとめになります。</div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">color_lens</i>Illustration</div>
+                <div class="collapsible-body">
+                  絵がかけたらいいなぁ・・・と何度か苦心している残骸。<br>
+                  描くのが楽しくなるほどには、上手くならない現状<br>
+                  ただ、たまに発作のように描こうとするときがある。<br>
+                  以下pixivへのリンク、pixivでは二次創作の小説も載せてます<br><br>
+                  <a href="https://www.pixiv.net/member.php?id=12045777" target="_blank">pixiv：黒白灰（モノトーン）のページ</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fas fa-book-open"></i>Booklog</div>
+                <div class="collapsible-body">
+                  読書記録はブクログでまとめさせてもらっています。<br>
+                  大学生の頃より社会人になってからの方が本読めているかも<br>
+                  <br>
+                  <div class="center-align">
+                    <script type="text/javascript" src="//widget.booklog.jp/blogparts/js/booklog_minishelf.js?default" id="booklog_minishelf"></script>
+                    <script type="text/javascript" src="//api.booklog.jp/json/yomituku?category=0&count=15&callback=booklog_minishelf"></script>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fas fa-gamepad"></i>Game</div>
+                <div class="collapsible-body">
+                  めちゃくちゃ積んでる<br>
+                  switchとアトラスをひたすらやる人<br>
+                  <br>
+                  switchの所持タイトル<br>
+                  マリオカート（めっちゃ弱い）<br>
+                  ゼルダの伝説<br>
+                  OCTOPATH TRAVELER（クリアしてない）<br>
+                  Let's Go ピカチュウ（クリアしてない）<br>
+                  スマブラ（キャラは出した）<br>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fab fa-github"></i>Github</div>
+                <div class="collapsible-body">
+                  まだまだ使い慣れていないかんじ<br>
+                  <a href="https://github.com/nekotokurasu11" target="_blank">nekotokurasu11のマイページ</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog -->
+  <div id="blog">
+    <div class="section blue-grey lighten-4">
+      <div class="container">
+        <div class="center-align">
+          <i class="medium material-icons">format_list_bulleted</i>
+          <h4 class="mt-0">Blog</h4>
+          <h6 class="text-muted">技術系ブログ</h6>
+        </div>
+        <div class="row mt-4">
+          <div class="col s12 m8 offset-m2">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="" src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" alt="">
+              </div>
+              <div class="card-content">
+                <span class="card-title">ITと創作でねこを飼いたい</span>
+                プログラミングやITで勉強したこと、疑問をまとめます。
+              </div>
+              <div class="card-action">
+                <a href="http://ashanoguzyutu.hatenablog.com/" target="_blank">ブログへ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- twitter -->
+  <div id="twitter">
+    <div class="section light-blue lighten-3">
+      <div class="container">
+        <div class="center-align">
+          <i class="fab fa-4x fa-twitter"></i>
+          <h4 class="mt-0">Twitter</h4>
+          <h6 class="text-muted">どっちかっていうとCreatorより</h6>
+        </div>
+        <div class="row mt-4">
+          <div class="col s12 m8 offset-m2">
+            <a class="twitter-timeline" data-height="500" href="https://twitter.com/fryimage?ref_src=twsrc%5Etfw">Tweets by fryimage</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red" href="#"><i class="material-icons">home</i></a></li>
+      <li><a class="btn-floating pink" href="#profile"><i class="material-icons">account_circle</i></a></li>
+      <li><a class="btn-floating yellow darken-1" href="#story"><i class="material-icons">create</i></a></li>
+      <li><a class="btn-floating green" href="#piece"><i class="material-icons">extension</i></a></li>
+      <li><a class="btn-floating blue" href="#blog"><i class="material-icons">format_list_bulleted</i></a></li>
+      <li><a class="btn-floating blue" href="#twitter"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <footer class="page-footer light-green lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img src="img/footer-logo.png" alt="footer-logo">
+          <h6 class="white-text">~"楽しい"を届けられる人になりたい~</h6>
+          <div class="white-text">
+            IT技術や創作物を通して、人生をちょっと豊かにする手伝いがしたい。
+            そんな思いで「sendFun(it,story)」というサイト名にしました。<br>
+            一つ一つ実装(形に)していけたらと思ってます。
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text"><i class="material-icons">link</i>LINKS IN SITE</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">HOME</a></li>
+            <li><a class="grey-text text-lighten-3" href="#profile">PROFILE</a></li>
+            <li><a class="grey-text text-lighten-3" href="#story">STORY</a></li>
+            <li><a class="grey-text text-lighten-3" href="#piece">PIECE</a></li>
+            <li><a class="grey-text text-lighten-3" href="#blog">BLOG</a></li>
+            <li><a class="grey-text text-lighten-3" href="#twitter">TWITTER</a></li>
+            <li class="mt-2"><a href="https://twitter.com/fryimage?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @fryimage</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 sendFun(it,story)
+      </div>
+    </div>
+    </fotter>
+</body>
+
+</html>
